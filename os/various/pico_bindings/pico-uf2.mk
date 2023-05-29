@@ -7,7 +7,7 @@
 # elf2uf2 sources are included in the pico-sdk and must be built within the 
 # SDK tools directory before it can be used
 ifeq ($(ELF2UF2),)
-  ELF2UF2 = $(PICOSDKROOT)/tools/elf2uf2/elf2uf2
+  ELF2UF2 = elf2uf2
 endif
 
 $(BUILDDIR)/$(PROJECT).uf2: $(BUILDDIR)/$(PROJECT).elf

@@ -1,5 +1,5 @@
 # Pico-SDK files.
-PICOSDKROOT   := $(CHIBIOS)/ext/pico-sdk
+PICOSDKROOT   := $(PICO_SDK_PATH)
 
 PICOSDKSRC     = $(PICOSDKROOT)/src/rp2_common/hardware_clocks/clocks.c \
                  $(PICOSDKROOT)/src/rp2_common/hardware_pll/pll.c \

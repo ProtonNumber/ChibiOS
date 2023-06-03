@@ -11,7 +11,6 @@
             "-Wl,--defsym=__process_stack_size__=0x400",
             "-Wl,--defsym=__main_stack_size__=0x200",
             "-DCRT0_EXTRA_CORES_NUMBER=1",
-            "-I./cfg",
             "-I./ChibiOS-Contrib/os/hal/ports/RP/LLD/ADCv1",
             "-I./ChibiOS-Contrib/os/hal/ports/RP/LLD/I2Cv1",
             "-I./ChibiOS-Contrib/os/hal/ports/RP/LLD/PWMv1",

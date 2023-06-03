@@ -19,4 +19,4 @@ SRC=$(echo "$PATHS" | grep '\.[cS]$' | sed 's/.*/+<&>/')
 
 BLANK_JSON=${BLANK_JSON}
 
-echo { "name": "ChibiOS", "version": "21", "build": { "includeDir": ".", "flags": [ -Iinclude, -Wl,--defsym=__process_stack_size__=0x400, -Wl,--defsym=__main_stack_size__=0x200, -DCRT0_EXTRA_CORES_NUMBER=1, $INC ] "srcDir": ".", "srcFilter" : $SRC, } } |  sed 's/ /\n/g' > library.json
+echo { \"name\": \"ChibiOS\", \"version\": \"21\", \"build\": { \"includeDir\": \".\", \"flags\": [ -Iinclude, -Wl,--defsym=__process_stack_size__=0x400, -Wl,--defsym=__main_stack_size__=0x200, -DCRT0_EXTRA_CORES_NUMBER=1, $INC ] \"srcDir\": \".\", \"srcFilter\" : $SRC, } } |  sed 's/ /\n/g' > library.json
